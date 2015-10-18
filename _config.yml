@@ -1,0 +1,12 @@
+title: MS Blog
+name: MOhanad Salah
+author: Mohanad Salah
+url: http://moh117.github.io
+excerpt_separator: <!--more-->
+markdown: kramdown
+highlighter: pygments
+baseurl: ""
+exclude: ["node_modules",
+  "gulpfile.js",
+  "package.json",
+  "README.md"]

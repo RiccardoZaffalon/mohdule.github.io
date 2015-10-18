@@ -1,0 +1,48 @@
+/**Categories Page Styles**/
+
+.cat-list
+	margin: 50px 50px 150px
+	.cat-name
+		font-weight: bold
+		width: 5em
+		border-bottom: 2px solid $main-color
+	.cat-posts
+		list-style: none
+
+/**Archives Page Styles**/
+
+		
+.archives-page-header
+	background: $accent2
+
+.archives
+	margin: 50px 50px 150px
+	h1
+		font-weight: bold
+	.datime-container
+		margin-left: 50px
+
+	.datetime
+		width: 100px
+		border-bottom: 2px solid $accent2
+	
+	.posts-list
+		font-size: 20px
+		font-weight: bold
+
+	a
+		color: $accent2
+		transition: color .5s ease-in-out
+		&:hover
+			color: $accent		
+
+@media (max-width: 767px)
+	.cat-list
+		.cat-name
+			text-align: center
+
+@media (max-width: 420px)
+	.cat-list
+		margin: 50px 0 150px
+	.archives
+		margin: 50px 0 150px

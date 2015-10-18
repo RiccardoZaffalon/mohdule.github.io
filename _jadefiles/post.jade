@@ -1,0 +1,15 @@
+.post-page-wrapper
+	header.jumbotron.post
+		.container
+			.post-back-btn
+				span.fa-stack-2x
+					a(href="../../../../")
+						i.fa.fa-arrow-circle-left.post-back-ico
+			.post-title
+				h1 {{ page.title }}
+				h5 {{ post.date | date: "%-d %b %Y" }}
+			hr
+
+
+	.container.narrow
+		.content {{ content }}

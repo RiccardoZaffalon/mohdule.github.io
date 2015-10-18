@@ -1,0 +1,9 @@
+---
+layout: page
+title: Categories
+---
+ <header class="jumbotron page-header"><div class="page-back"><span class="fa-stack-2x"><a href="../"><i class="fa fa-arrow-circle-left page-back-ico"></i></a></span></div><h1 class="page-title">{{ page.title }}</h1><hr/></header><div class="container cat-list">{% for category in site.categories %}<h2 style="text-transform:capitalize;" class="cat-name">{{ category | first}}</h2><ul class="cat-posts">{% for posts in category %}
+{% for post in posts %}
+{% if post.url %}<li><a href="{{ post.url }}"><h3>> {{ post.title }}</h3></a></li>{% endif %}
+{% endfor %}
+{% endfor %}</ul>{% endfor %}	</div>

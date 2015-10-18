@@ -1,0 +1,36 @@
+|---
+|layout: page
+|title: Archives
+|---
+| 
+header.jumbotron.page-header.archives-page-header
+	.page-back
+		span.fa-stack-2x
+			a(href="../")
+				i.fa.fa-arrow-circle-left.page-back-ico
+
+	h1.page-title {{ page.title }}
+	hr
+
+.container.archives
+	ul
+		h2 All Posts:
+		.datime-container
+			|{% for post in site.posts %}
+			li.archive-post-list
+				time(datetime='{{post.date | date: "%Y-%m"}}')
+					h3.datetime {{post.date | date: "%m/20%y"}}
+				ul.posts-list
+					li.inline.archives_list
+						a(href="{{post.url}}").archive_list_article_link {{post.title}}
+						p.summary {{ post.summary }}
+			|{% endfor %}
+
+	div(style="display: none")
+		h2.post_title Tags
+
+		ul
+			|{% for tag in site.tags %}
+			li
+				a(href="/tag/{{ tag[0] }}") {{ tag[0] }}
+			|{% endfor %}		
