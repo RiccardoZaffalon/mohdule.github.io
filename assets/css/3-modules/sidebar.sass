@@ -51,13 +51,16 @@
     padding: 5px 10px
     border-radius: 50%
     color: white
+    box-shadow: 0 4px 2px 0 rgba(0,0,0,.25),0 4px 5px 0 rgba(0,0,0,.25)
+    transition: all ease-in .2s
+    &:hover
+        transform: scale(0.95)
+        color: white
     &:active
         transform: scale(0.90)
     &:active,
     &:visited
-        color: white
-    &:hover
-        color: white
+        color: white      
 
 #menu-toggle 
     z-index: 1
@@ -69,12 +72,14 @@
     background: $main-color
     padding: 5px 10px
     border-radius: 50%
-    transition: all ease-in .1s
+    transition: all ease-in .2s
+    box-shadow: 0 4px 2px 0 rgba(0,0,0,.25),0 4px 10px 0 rgba(0,0,0,.25)
     color: white
     &:active
         transform: scale(0.90)
     &:hover
         color: $accent
+        transform: scale(0.95)
 
 
 #sidebar-wrapper.active 

@@ -7,7 +7,9 @@
 						i.fa.fa-arrow-circle-left.post-back-ico
 			.post-title
 				h1 {{ page.title }}
-				h5 {{ post.date | date: "%-d %b %Y" }}
+				span.date
+					i.fa.fa-calendar-o
+					h5 {{ page.date | date: "%Y-%m-%d" }}
 			hr
 
 
