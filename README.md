@@ -1,4 +1,4 @@
-## This is <a href="https://moh117.github.io/" target="_blank">yy personal Blog</a>  
+## This is <a href="https://moh117.github.io/" target="_blank">my personal Blog</a>  
   
 I write about (Linux | Web development ) and more.
   
