@@ -1,23 +1,29 @@
 .post-page-wrapper
 	background:white
-.narrow
-	width: 700px
-	margin:0 auto
-	background: white
-	.content
-		display: inline-block
-		font: 12px/1.2 "autocode" monospace
-		p
-			line-height: 1.5
-		h1,h2,h3
-			margin: 5px 3px 5px 15px
-			line-height: 1.5
-		hr
-			margin: 0 0 5px 15px
-			width: 10em
 
+.content
+	margin: 0 auto
+	font: 12px/1.2 "autocode" monospace
+	p
+		display: block
+		line-height: 1.5
+		font-size: 18px
+	h1,h2
+		margin-left: 15px
+		line-height: 1.5
+		color: $accent
+	h3,h4
+		color: $main-color		
+		margin-left: 15px
+	a
+		color: $accent
+		&:hover
+			color: $main-color		
+	hr
+		margin: 0 0 5px 15px
 .comments
-	margin-top: 50px
+	width: 700px
+	margin: 50px auto 0
 	margin-bottom: -80px
 	background: darken($lighter-grey,5)
 	border-radius: 15px 10px 0 0
@@ -26,21 +32,37 @@
 .post-footer-wrapper
 	footer
 		hr
-			border: 1px solid $accent4
+			border: 1px solid $accent
 
+@media only screen and (min-width: 1200px )
+	.content
+		width: 800px
+	.comments
+		width: 900px
 	
 @media (max-width: 850px)
-	.narrow
-		width: auto
-		font-size: 1em
 	.content
-		font-size: 2000px
-		display: inline-block
+		width: auto
+		blockquote
+			padding: 0
+			margin-left: 10px
+			p
+				font-size: 16px
+				width: auto
 	.comments
 		width: 600px
-	.f2
-		padding-top: 5px
 
 @media (max-width: 815px)
 	.comments
 		width: auto
+
+@media (max-width: 485px)
+	.content
+		blockquote
+			display: block
+			width: 95vw
+			padding: 5px
+			margin-left: 0px
+			p
+				font-size: 10px
+				margin: 2px

@@ -8,7 +8,6 @@ blog.
   
 <!--more-->
 I'm relativly new to web development so:  
-**- I love sharing stuff that i've learned about web development.**  
-**- To write my thoughts about several topics and technologies that i have some experience in.**  
-**- To be a better writer (_maybe write a book someday_ 😉).**  
+**- I love sharing stuff that i've learned about web development and linux.**   
+**- To help people who want to go on them same journey i'm in.**  
 **- To see that if i can actualy build a blog (✔).**  
