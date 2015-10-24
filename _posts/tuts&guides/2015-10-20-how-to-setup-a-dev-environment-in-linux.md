@@ -2,11 +2,12 @@
 layout: post
 title: How To Setup A Web Development Environment In linux (Part 1)
 category: Guides
-tags: [web,linux]
+tags: [web ,linux]
+description: How To Setup A Web Development Environment In linux
 ---
 In this post i'll help you to set up 
 a web development environment in linux. 
-<!--more-->
+<!--excerpt-->
 
 Disclaimer: i havent tried PHP in linux yet but when i do
 i will update this post.   
