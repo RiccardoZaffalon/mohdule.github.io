@@ -1,11 +1,19 @@
 title: MS Blog
-name: MOhanad Salah
+name: Mohanad Salah
 author: Mohanad Salah
+
 url: http://moh117.github.io
-excerpt_separator: <!--more-->
+baseurl: ""
+
 markdown: kramdown
 highlighter: pygments
-baseurl: ""
+
+excerpt_separator: <!--more-->
+
+keywords:  [web development, web , linux , programming, android, guides]
+
+google_analytics_id: UA-69158926-1
+
 exclude: ["node_modules",
   "gulpfile.js",
   "package.json",
