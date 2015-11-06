@@ -172,7 +172,8 @@ If you want to upgrade your linuxbrew packages you can always do this :
 
 >replace 'x' with the package name that you want to upgrade
 
-For Arch linux users :
+## For Arch linux users:
+--- 
 
 If you're already using AUR you don't homebrew at all you just do:
 
