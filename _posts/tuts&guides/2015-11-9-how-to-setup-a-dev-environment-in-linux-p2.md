@@ -64,7 +64,7 @@ or download the .deb file from here:
 <br>
 
 
-## If want to setup a web development environment on a Mac , i highly recommend these guides :  
+### #-**If want to setup a web development environment on a Mac , i highly recommend these guides :**  
 
   1- <a href="https://www.youtube.com/watch?v=tpyDK-Y44eI" target="_blank">Mackenzie Child - How To Setup A Development Environment - Part 1</a>  
 
