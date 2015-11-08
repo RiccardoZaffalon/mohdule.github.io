@@ -9,7 +9,7 @@ In this post i'll help you to set up
 a web development environment in linux. 
 <!--excerpt-->
 
-Disclaimer: i havent tried PHP in linux yet but when i do
+Disclaimer: i haven't tried PHP in linux yet but when i do
 i will update this post.   
 
 <br />
@@ -23,11 +23,11 @@ Linuxbrew is a fork of Homebrew, A Mac OS package manager.
 with linuxbrew we can easily install various packages like (Nodejs , Ruby , ...etc).   
 <br />
 
-### #-Dependancies :  
+### #-Dependencies :  
   
-You need to install a number of dependancies before you can install LinuxBrew. 
+You need to install a number of dependencies before you can install LinuxBrew. 
 
->Note: sometimes these dependancies fail to install if so retry again or find them in your favorite 
+>Note: sometimes these dependencies fail to install if so retry again or find them in your favorite 
 package manager.  
 
 <br />
@@ -70,7 +70,7 @@ Your'e done, now lets proceed to the next step.
 rbenv is a ruby version manager used to get the latest version of ruby.  
 There is another one called <a href="https://rvm.io/rvm/install" target="_blank">rvm</a> but i like rbenv more.  
 
-First let's make sure that linuxbrew in up-to date by runing this on the terminal : 
+First let's make sure that linuxbrew in up-to date by running this on the terminal : 
 
 	brew update
 
@@ -108,7 +108,7 @@ Hopefully you will see that the version we installed rbenv is successfully set t
 
 <br />
 
-If not, add the folowing line to your **.bashrc** file
+If not, add the following line to your **.bashrc** file
 
 >export PATH="$HOME/.rbenv/shims:$PATH" 
 
@@ -136,7 +136,7 @@ Restart your terminal and check if rails was installed :
 	rails -v
 <br />  
 
->Note: You may want to reinstall rails using **sudo** in case the installtion fails.
+>Note: You may want to reinstall rails using **sudo** in case the installation fails.
 
 To test it, lets create a new rails app :  
 
@@ -149,7 +149,7 @@ Open you browser and type **localhost:4000** you should get a page that says <a 
 ## 3-NodeJs & NPM  
 ---  
 First update linuxbrew to make sure that you have access to the latest 
-pacakages :
+packages :
 	
 	brew update
 
