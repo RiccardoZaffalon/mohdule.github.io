@@ -190,6 +190,6 @@ not do:
 Arch linux have the luxury of pacman pacakges you don't need homebrew or rbenv at all,Cause pacman packages are always up to date :
 
 	sudo pacman -S ruby
-	sudo pacman -S node npm
+	sudo pacman -S nodejs npm
 
 If you had any trouble let me know in the comments.  

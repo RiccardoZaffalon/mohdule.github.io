@@ -11,17 +11,16 @@ The customization part.
 ## 1 - Guake
 ---
 Guake is my terminal of choice it's very handy and easy to install : 
+**Arch Linux**  
+
+	yaourt -S guake
 
 **Ubuntu or Debain**  
 
 	sudo apt-get install guake
 
-**Arch Linux**  
-
-	yaourt -S guake
-
-the joy of Guake that it work from anywhere on your pc 
-by pressing f12 it will pop-up in top of your screen, And it's 
+The joy of Guake that it work from anywhere on your pc 
+by pressing '**F12**' it will pop-up in top of your screen, And it's 
 highly customizable.  
 
 Tip: Add guake to your startup applications.  
