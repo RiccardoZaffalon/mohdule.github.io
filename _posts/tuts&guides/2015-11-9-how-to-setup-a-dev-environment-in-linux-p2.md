@@ -30,18 +30,8 @@ Tip: Add guake to your startup applications.
 
 **You can step up your terminal game by using zsh with <a href="http://ohmyz.sh/" target="_blank">Oh My ZSH</a> incredibly awesome !!.**
 
-## 2-Git
----
-For Arch Linux users git is most likely pre-installed ,if 
-not do:
 
-	pacman -S git
-
-for Debian and Ubuntu:
-
-	sudo apt-get install git	
-
-## 3-Text Editor
+## 2-Text Editor
 ---
 People also use (<a href="http://brackets.io/" target="_blank">Brackets</a>, <a href="">Atom</a>, <a href="https://www.gnu.org/software/emacs/" target="_blank">Emacs</a> , <a href="http://www.vim.org/" target="_blank">Vim</a> ...etc).  
 Personally i use sublime Text 3 as my main text editor :  

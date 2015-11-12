@@ -57,7 +57,7 @@ Then paste these lines in your **.bashrc** or **.zshrc** file :
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"  
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 
-Your'e done, now lets proceed to the next step.  
+Your'e done, now on to the next step.  
   
 <br />  
 
@@ -74,7 +74,7 @@ First let's make sure that linuxbrew in up-to date by running this on the termin
 
 	brew update
 
-Then lets install rbenv 
+Installing rbenv 
 
 	brew install rbenv ruby-build
 
@@ -125,7 +125,7 @@ Great now we have the latest version of Ruby installed
 
 <br />
 
-### #-Lets install Rails :
+### # Installing Rails :
 
 Run this command to install rails for example i'll install version '4.2.1':  
 
@@ -138,13 +138,13 @@ Restart your terminal and check if rails was installed :
 
 >Note: You may want to reinstall rails using **sudo** in case the installation fails.
 
-To test it, lets create a new rails app :  
+To test it, create a new rails app :  
 
 	rails new testApp
 	cd testApp
 	rails s
 
-Open you browser and type **localhost:4000** you should get a page that says <a href="http://guides.rubyonrails.org/images/getting_started/rails_welcome.png" target="_blank">welcome aboard</a>  
+Open you browser and type **localhost:4000** you should get a page that says <a href="http://guides.rubyonrails.org/images/getting_started/rails_welcome.png" target="_blank">welcome aboard</a>.  
 
 ## 3-NodeJs & NPM  
 ---  
@@ -170,14 +170,26 @@ If you want to upgrade your linuxbrew packages you can always do this :
 	brew update
 	brew upgrade x
 
->replace 'x' with the package name that you want to upgrade
+>replace 'x' with the package name that you want to upgrade  
 
-## For Arch linux users:
+## 2-Git
+---
+For **Arch Linux** users git is most likely pre-installed ,if 
+not do:
+
+	pacman -S git
+
+**Debian and Ubuntu:**
+
+	sudo apt-get install git	
+
+
+## Arch linux users:
 --- 
 
-If you're already using AUR you don't homebrew at all you just do:
+Arch linux have the luxury of pacman pacakges you don't need homebrew or rbenv at all,Cause pacman packages are always up to date :
 
-	yaourt -S ruby
-	yaourt -S node npm
+	sudo pacman -S ruby
+	sudo pacman -S node npm
 
 If you had any trouble let me know in the comments.  
