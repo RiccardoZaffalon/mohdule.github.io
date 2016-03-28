@@ -11,7 +11,7 @@ highlighter: pygments
 excerpt_separator: <!--excerpt-->
 
 description: I write about linux and web development and other tech related stuff
-keywords:  [web development, web , linux , programming, android, guides]
+keywords: [web development, web , linux , programming, android, guides]
 
 google_analytics_id: UA-69158926-1
 
