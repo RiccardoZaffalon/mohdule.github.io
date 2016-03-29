@@ -6,7 +6,7 @@ url: http://moh117.github.io
 baseurl: ""
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 excerpt_separator: <!--excerpt-->
 
