@@ -9,8 +9,8 @@ In this post i'll help you to set up
 a web development environment in linux. 
 <!--excerpt-->
 
-Disclaimer: i haven't tried PHP in linux yet but when i do
-i will update this post.   
+ 
+<a href="http://dominicm.com/?s=php">If you want to setup PHP in Arch Linux, Check this guy blog</a>  
 
 <br />
 
