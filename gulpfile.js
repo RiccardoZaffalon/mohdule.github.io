@@ -1,95 +1,45 @@
+var browserSync = require('browser-sync').create();
 var gulp        = require('gulp'),
-    browserSync = require('browser-sync'),
+    shell       = require('gulp-shell'),
     sass        = require('gulp-sass'),
-    prefix      = require('gulp-autoprefixer'),
-    cp          = require('child_process'),
-    jade        = require('gulp-jade');
+    prefix      = require('gulp-autoprefixer');
 
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
+// Task for building blog when something changed:
+// gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
+// Or if you don't use bundle:
+gulp.task('build', shell.task(['jekyll build --watch']));
 
-
-
-/**
- * Build the Jekyll Site
- */
-gulp.task('jekyll-build', function (done) {
-    browserSync.notify(messages.jekyllBuild);
-    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
-        .on('close', done);
-});
-
-
-/**
- * Rebuild Jekyll & do page reload
- */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-    browserSync.reload();
-});
-
-
-
-
-/**
- * Wait for jekyll-build, then launch the Server
- */
-gulp.task('browser-sync', ['jade', 'jade-pages', 'sass', 'jekyll-build'], function() {
-    browserSync({
-        server: {
-            baseDir: '_site'
-        },
-        notify: false
+// Task for serving blog with Browsersync
+gulp.task('browser-sync',['sass'], function () {
+    browserSync.init({
+      server: {baseDir: '_site/'},
+      open: false
     });
+    // Reloads page when some of the already built files changed:
+    gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
-
 
 
 gulp.task('sass', function () {
-  gulp.src('assets/css/main.scss')
-    .pipe(sass({includePaths: ['css'],outputStyle: 'compressed'}).on('error', browserSync.notify))
-    .pipe(gulp.dest('assets/css'))
-    .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-    .pipe(gulp.dest('_site/assets/css'))
-    .pipe(browserSync.reload({stream:true}));
+  return gulp.src('assets/css/master.scss')
+    .pipe(sass({includePaths: ['css'],outputStyle: 'compressed'}).on('error',browserSync.notify))
+    .pipe(prefix({browsers: ['last 2 versions'], cascade: true}))
+    .pipe(gulp.dest('_site/css'))
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('assets/css'));
 });
 
-
-
-/*
-* Compile jade
-*/
-
-gulp.task('jade', function(){
-  return gulp.src('_jadefiles/*.jade')
-  .pipe(jade())
-  .pipe(gulp.dest('_includes'));
-});
-
-gulp.task('jade-pages', function(){
-  return gulp.src('_pagesjade/*.jade')
-  .pipe(jade())
-  .pipe(gulp.dest('pages'));
-});
 
 /**
  * Watching files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
+ * Watch html/md, sass/css files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
-    gulp.watch('assets/js/**', ['jekyll-rebuild']);
-    gulp.watch('_posts/*/*.md', ['jekyll-rebuild']);
-    gulp.watch(['index.html', '_layouts/*.html', '_includes/*','pages/*.html'], ['jekyll-rebuild']);
-    gulp.watch('_jadefiles/*.jade', ['jade']);
-    gulp.watch('_pagesjade/*.jade', ['jade-pages']);
 });
-
-
-
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['build' ,'browser-sync', 'watch']);
