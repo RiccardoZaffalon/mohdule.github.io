@@ -1,1 +1,11 @@
-@import "base/base";
+// Basic styles and variables
+@import "1_base/var";
+@import "1_base/base";
+
+// My custom button
+@import "2_modules/rect-btn";
+
+// The card and it's sections
+@import "3_sections/card";
+@import "3_sections/lhs";
+@import "3_sections/rhs";

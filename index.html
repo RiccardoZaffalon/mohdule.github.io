@@ -1,8 +1,63 @@
 ---
 layout: default
 ---
+	<!-- Card -->
+	<div class="card">
+		<!-- Left hand side of the card -->
+		<header class="lhs">
+			<!-- Banner Section -->
+			<section class="banner">
+				<img src="/assets/img/logo.png" alt="logo" class="logo image">
+				<h1 class="name">Mohanad Salah</h1>
+				<h2>@mohdule</h2>
+			</section>
 
-	<div class="box">
-    <h1>Sorry !</h1>
-    <h2>The site is under construction</h2>
-  </div>
+			<!-- Scoial icons section -->
+			<section class="social_icons">
+				<a href="http://github.com/{{ site.username }}">
+					<img src="/assets/img/icons/github.svg" alt="github icon">
+				</a>
+
+
+				<a href="http://twitter.com/{{ site.username }}">
+					<img src="/assets/img/icons/twitter.svg" alt="twitter icon">
+				</a>
+
+
+				<a href="http://facebook.com/{{ site.username }}">
+					<img src="/assets/img/icons/fb.svg" alt="facebook icon">
+				</a>
+			</section>
+
+		</header>
+
+		<!-- Right hand side of th card -->
+		<section class="rhs">
+
+			<div class="content">
+				 <!-- About me -->
+				<div class="about_me">
+					<span class="dot square-dot"></span>
+					<h1>ABOUT</h1>
+
+					<p><span class="dot circle-dot"></span> I'm a Software Developer, Creating Web apps ,I love linux | Python | JavaScript</p>
+				</div>
+
+				<!-- Skills -->
+				<div class="what_i_do">
+					<span class="dot square-dot"></span>
+					<h1>WHAT I DO</h1>
+
+					<ul>
+						<li><span class="dot circle-dot"></span>Web Development</li>
+						<li><span class="dot circle-dot"></span>Python Programming</li>
+						<li><span class="dot circle-dot"></span>I design stuff for fun .</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<a href="https://{{ site.username }}.github.io/blog" class="rect-btn">Blog</a>
+		</section>
+
+	</div>

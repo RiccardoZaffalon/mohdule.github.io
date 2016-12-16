@@ -1,21 +1,20 @@
-title:          Mohanad Salah
+title:    Mohanad Salah
+url:      "https://moh117.github.io"
 #description:
-url:            "https://moh117.github.io"
 #baseurl: "" # the subpath of your site, e.g. /blog
 
-twitter_username: mohdule
-author:           Mohanad Salah
-github_username:  mohdule
+username: mohdule
+author:   Mohanad Salah
 
 # Content settings
 excerpt_separator:   <!--excerpt-->
-keywords:            [web development, web , coding, linux , programming, python, game dev, javascript]
+keywords:            [web developer ,web development, web , coding, linux , programmer, python, javascript]
 
 # Build settings
-markdown:      kramdown
+markdown: kramdown
 #paginate:
 #paginate_path:
-gems:          [jekyll-feed]
+gems:     [jekyll-feed]
 exclude:
   - Gemfile
   - Gemfile.lock

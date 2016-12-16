@@ -22,7 +22,9 @@ gulp.task('browser-sync',['sass'], function () {
 
 gulp.task('sass', function () {
   return gulp.src('assets/css/master.scss')
-    .pipe(sass({includePaths: ['css'],outputStyle: 'compressed'}).on('error',browserSync.notify))
+    .pipe(sass({includePaths: ['css'],outputStyle: 'compressed'}).on('error',function(err){
+			 console.error('Error!', err.message);
+		}))
     .pipe(prefix({browsers: ['last 2 versions'], cascade: true}))
     .pipe(gulp.dest('_site/css'))
     .pipe(browserSync.reload({stream:true}))
