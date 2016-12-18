@@ -9,6 +9,7 @@ author:   Mohanad Salah
 # Content settings
 excerpt_separator:   <!--excerpt-->
 keywords:            [web developer ,web development, web , coding, linux , programmer, python, javascript]
+google-analytics: UA-69158926-1
 
 # Build settings
 markdown: kramdown
