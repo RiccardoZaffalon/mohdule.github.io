@@ -8,30 +8,61 @@
 	justify-content: center
 	align-items: center
 
-.content
-	color: $text
-	h1
-		font-size: 1.3rem
-		display: inline
-	.about_me
+	.content
+		color: $text
 		h1
-			color: $pinky
-		p
-			font-size: 1.1rem
-			font-weight: 200
-	.what_i_do
-		.dot
-			background: $teal
-		h1
-			color: $teal
-		ul
-			li
-				margin: 10px 0
-			li:nth-child(3)
-				.dot
-					background: $pinky
-					margin-left: 20px
+			font-size: 1.3rem
+			display: inline
+		.about_me
+			h1
+				color: $pinky
+			p
+				font-size: 1.1rem
+				font-weight: 200
+		.what_i_do
+			.dot
+				background: $teal
+			h1
+				color: $teal
+			ul
+				li
+					margin: 10px 0
+				li:nth-child(3)
+					.dot
+						background: $pinky
+						margin-left: 20px
 
-	a
-		margin: 0 auto
-		color: red
+		a
+			margin: 0 auto
+
+// Media Queries
+// Width
+@media (max-width: $width-break)
+	.rhs
+		// background: tomato
+		padding: 5% 10%
+		text-align: center
+		.content
+			padding: 40px
+			.about_me
+				margin-bottom: 5vh
+			.what_i_do
+				margin: 50px 0
+				ul
+					width: 40vw
+					text-align: left
+					margin: 0 auto
+					li:nth-child(3)
+						.dot
+							background: $pinky
+							margin-left: 0
+		.rect-btn
+			width: 100px
+			height: 30px
+			padding-top: 10px
+
+
+// Height
+// @media (max-height: height-break)
+	// .rhs
+	// 	background: yellow
