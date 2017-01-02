@@ -4,12 +4,12 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     prefix      = require('gulp-autoprefixer');
 
-// Task for building blog when something changed:
+// Task for building site when something changed:
 // gulp.task('build', shell.task(['bundle exec jekyll build --watch']));
 // Or if you don't use bundle:
 gulp.task('build', shell.task(['jekyll build --watch']));
 
-// Task for serving blog with Browsersync
+// Task for serving site with Browsersync
 gulp.task('browser-sync',['sass'], function () {
     browserSync.init({
       server: {baseDir: '_site/'},
